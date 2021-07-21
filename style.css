@@ -1,7 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     color: grey;
-    width: 66%;
+    width: 60%;
     margin: auto;
    
 }
@@ -194,9 +194,9 @@ section{
     display: flex;
     justify-content: space-around;
     flex-flow: wrap row;
-    width: 55%;
+    width: 66%;
     border-radius: 20px;
-    max-width: 600px;
+    /*max-width: 750px;*/
  
     
 
@@ -208,7 +208,6 @@ figure{
     border:3px solid white;
     box-shadow: 5px 5px 5px rgb(184, 184, 184);
     margin: 0.5em;
-   
     height: -5em;
     width: 10em;
     display: flex;
@@ -236,10 +235,7 @@ figcaption{
     font-size: 0.5em;
     margin-bottom: 0.5em;
     margin-top: -0.5em;
-    margin-left: 1em;
-    
-
-    
+    margin-left: 1em;   
 }
 figcaption h2, strong{
     color: black;
@@ -253,8 +249,6 @@ figcaption i{
     color: #cecece;
 }
 
-
-
 aside{
     background-color: #F2F2F2;
     display: flex;
@@ -262,4 +256,25 @@ aside{
     flex-flow: wrap row;
     width:30%;
     border-radius: 20px;
+}
+
+aside figure{
+    display: flex;
+    flex-direction: row;
+    height: 7em;
+    width: 16em;   
+}
+
+aside figure img{
+    border-radius: 20px 0 0 20px;
+    height: 7em;
+    width: 5em;  
+    margin-left: 0em;
+}
+
+aside figcaption{
+    font-size: 0.5em;
+    margin-left: 2em;
+    
+    
 }
