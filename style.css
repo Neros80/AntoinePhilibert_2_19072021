@@ -112,7 +112,8 @@ nav {
 }
 
 .filter p{
-    font-size: 1em;
+    font-size: 0.75em;
+    font-weight: bolder;
     color: black;
     margin: auto;
     padding-left: 0.5em;
@@ -162,12 +163,103 @@ nav {
 
 #info{
     color: #0065FC;
-    border: 1px solid #0065FC;
-    font-size: 0.5em;
+    border: 1px solid #F2F2F2;
+    font-size: 0.75em;
     padding:0.5em;
     width: 1em;
     border-radius: 100%;
+    text-align: center;    
+}
+
+.infoText{
+    font-size: 0.5em;
+}
+
+/*page Principal*/
+.bloc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc h1{
+        font-size: 1em;
+        /*width: 100%;*/
+        margin-left: 2em;
+        margin-top: 1.5em;
+        color: black;
+    }
+
+section{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    width: 55%;
+    border-radius: 20px;
+    max-width: 600px;
+ 
     
+
+}
+
+figure{
+    background-color: white;
+    border-radius: 20px;
+    border:3px solid white;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    margin: 0.5em;
+   
+    height: -5em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+}
+section h1{
+    width: 100%;
+}
+
+#afficher{
+    font-size: 1em;
+    width: 100%;
+    margin-left: 2em;
+    margin-top: 1.5em;
+    color: black;
+
+}
+figure img{
+    border-radius: 20px 20px 0 0;
+    height: 5em;
+    width: 10em;
+}
+
+figcaption{
+    font-size: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: -0.5em;
+    margin-left: 1em;
+    
+
+    
+}
+figcaption h2, strong{
+    color: black;
+}
+
+figcaption i{
+    color: #0065FC;
+}
+
+#gris{
+    color: #cecece;
 }
 
 
+
+aside{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    width:30%;
+    border-radius: 20px;
+  
