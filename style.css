@@ -262,19 +262,26 @@ aside figure{
     display: flex;
     flex-direction: row;
     height: 7em;
-    width: 16em;   
+    width: 16em; 
 }
 
 aside figure img{
     border-radius: 20px 0 0 20px;
     height: 7em;
-    width: 5em;  
+    width: 6em;  
     margin-left: 0em;
+    
 }
 
-aside figcaption{
+.cote{
     font-size: 0.5em;
     margin-left: 2em;
-    
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note{
+    margin-right: 25px;
+    margin-bottom: 1em;
 }
