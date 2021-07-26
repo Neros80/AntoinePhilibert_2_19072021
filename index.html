@@ -27,26 +27,25 @@
 
         <div id="searchBar">
             <i id="marqueur" class="fas fa-map-marker-alt"></i>
-            <input class="search" type="text" placeholder="Marseille, France" />
+            <input class="search" type="text" value="Marseille, France" />
             <input class="button" type="button" value="Rechercher">
         </div>
 
         <div class="filter">
+            <p>Filtres</p>
             <ul>
-                <p>Filtres
-                <p>
-                    <li><i class="fas fa-money-bill-wave"></i>
-                        <p>Economique</p>
-                    </li>
-                    <li><i class="fas fa-child"></i>
-                        <p>Familial</p>
-                    </li>
-                    <li><i class="fas fa-heart"></i>
-                        <p>Romantique</p>
-                    </li>
-                    <li><i class="fas fa-dog"></i>
-                        <p>Animaux autorisés</p>
-                    </li>
+                 <li><i class="fas fa-money-bill-wave"></i>
+                    <span>Economique</span>
+                </li>
+                <li><i class="fas fa-child"></i>
+                    <span>Familial</span>
+                </li>
+                <li><i class="fas fa-heart"></i>
+                    <span>Romantique</span>
+                </li>
+                <li><i class="fas fa-dog"></i>
+                    <span>Animaux autorisés</span>
+                </li>
             </ul>
         </div>
         <div class="infoText">
@@ -54,7 +53,7 @@
         </div>
     </header>
     <div class="bloc">
-        <section class="haute">
+        <section id="hebergements">
             <h1>Hébergements à Marseille</h1>
             <figure>
                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
@@ -105,7 +104,7 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/hebergements/4_small/Hotel de la mer.jpg" alt="Hôtel de la mer">
+                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                 <figcaption class="cote">
                     <div class="sousText">
                         <p><strong>Hôtel de la mer</strong></p>
@@ -125,7 +124,7 @@
                 <figcaption class="cote">
                     <div class="sousText">
                         <p><strong>Auberge Le Panier</strong></p>
-                     <p>Nuit à partir de 23€</p>
+                        <p>Nuit à partir de 23€</p>
                     </div>
                     <div class="note">
                         <i class="fas fa-star"></i>
@@ -133,11 +132,11 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i id="gris" class="fas fa-star"></i>
-                    </div>    
+                    </div>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/hebergements/4_small/Hotel amina.jpg" alt="Hôtel chez Amina">
+                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                 <figcaption class="cote">
                     <div class="sousText">
                         <p><strong>Hôtel chez Amina</strong></p>
@@ -155,13 +154,14 @@
             <p id="afficher">Afficher plus</p>
         </section>
 
-        <aside>
+        <section id="pop">
             <div class="populaires">
-                <h3>Les plus populaires</h3>
+                <h1>Les plus populaires</h1>
                 <i id="chart" class="fas fa-chart-line"></i>
             </div>
             <figure>
-                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotêl Le soleil du matin">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    alt="Hotêl Le soleil du matin">
                 <figcaption class="cote">
                     <div class="sousText">
                         <p><strong>Hotêl Le soleil du matin</strong></p>
@@ -178,7 +178,8 @@
             </figure>
 
             <figure>
-                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    alt="Au coeur de l'eau Chambres d'hôtes">
                 <figcaption class="cote">
                     <div class="sousText">
                         <p><strong>Au coeur de l'eau Chambres d'hôtes</strong></p>
@@ -193,9 +194,10 @@
                     </div>
                 </figcaption>
             </figure>
-            
+
             <figure>
-                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    alt="Hôtel Tout bleu et blanc">
                 <figcaption class="cote">
                     <div class="sousText">
                         <p><strong>Hôtel Tout bleu et blanc</strong></p>
@@ -210,8 +212,9 @@
                     </div>
                 </figcaption>
             </figure>
-        </aside>
-        <section class="bas">
+        </section>
+        <section id="activite">
+            <h1>Activités à Marseille</h1>
             <figure>
                 <img src="images/activites/4_small/text.png" alt="Vieux port">
                 <figcaption class="cote">
@@ -234,14 +237,16 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Parc National des Calanques">
+                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt="Parc National des Calanques">
                 <figcaption class="cote">
                     <div class="sousText">
                         <p><strong>Parc National des Calanques</strong></p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt="Notre-Dame-de-la-Garde">
                 <figcaption class="cote">
                     <div class="sousText">
                         <p><strong>Notre-Dame-de-la-Garde</strong></p>
@@ -259,18 +264,18 @@
 
     <footer>
         <div class="credit">
-            <h3>A propos</h3>
+            <p><strong>A propos</strong></p>
             <p>Fonctionnement du site</p>
             <p>Condistions générales de vente</p>
             <p>Données et confidentialité</p>
         </div>
         <div class="credit">
-            <h3>Nos hébergements</h3>
+            <p><strong>Nos hébergements</strong></p>
             <p>Charte qualité</p>
             <p>Soumettre votre hôtel</p>
         </div>
         <div class="credit">
-            <h3>Assistance</h3>
+            <p><strong>Assistance</strong></p>
             <p>Centre d'aide</p>
             <p>Nous contacter</p>
         </div>

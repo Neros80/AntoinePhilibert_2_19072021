@@ -107,18 +107,28 @@ nav {
 
 /*Filtre*/
 .filter{
-   margin-right: 33%;
-   position: relative;
+   width: 100%;
+   display: flex;
+   
 }
 
-.filter p{
-    font-size: 0.75em;
-    font-weight: bolder;
-    color: black;
+.filter span{
+
+    font-size: 1em;
+    color: rgb(0, 0, 0);
     margin: auto;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    
+  
+}
+
+.filter p{
+
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    padding-left: 1em;
+    margin-top: 1.5em;
+    font-weight: bolder;
   
 }
 
@@ -145,10 +155,8 @@ nav {
 
 }
 
-.filter li i{
+.filter i{
   
-    display: flex;
-    justify-content: center;
     color: #0065FC;
     background-color:#DEEBFF;
     font-size: 1em;
@@ -156,7 +164,7 @@ nav {
     border-radius: 20px;
     height: auto;
     width: 1em;
-    margin: auto;
+    border: 3px solid #DEEBFF;
     
     
 }
@@ -182,20 +190,33 @@ nav {
     flex-wrap: wrap;
 }
 
-.bloc h1{
+.bloc{
         font-size: 1em;
         margin-left: 2em;
         margin-top: 1.5em;
         color: black;
         width: 100%;
     }
+
+
+section{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+section h1{
+    font-size: 1em;
+    width: 100%;
+}
 /*partie hébergement*/
-.haute{
+#hebergements{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
     flex-flow: wrap row;
-    width: 66%;
+    width: 65%;
     border-radius: 20px;
 }
 
@@ -221,6 +242,8 @@ figure img{
     border-radius: 20px 20px 0 0;
     height: 60%;
     width: 12em;
+    object-fit: cover;
+
 }
 
 .cote{
@@ -259,19 +282,13 @@ figcaption i{
     color: #cecece;
 }
 
-aside{
+#pop{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
     flex-flow: wrap row;
-    width:30%;
+    width:25%;
     border-radius: 20px;
-}
-
-h3{
-    width:80%;
-    font-size: 1em;
-    margin: auto;
 }
 
 #chart{
@@ -281,28 +298,35 @@ h3{
 
 .populaires{
     display: flex;
+    justify-content: space-between;
     width: 400px;
     color: black;
-    margin: 1em;
+    padding:1em;
 }
 
-aside figure{
+.populaires h1{
+    color: black;
+
+}
+
+#pop figure{
     display: flex;
     flex-direction: row;
-    height: 7em;
+    height:6em;
     width: 16em; 
   
 }
 
-aside figure img{
+#pop figure img{
     border-radius: 20px 0 0 20px;
-    height: 7em;
-    width: 6em;  
-    margin-left: 0em;
+    height: 6em;
+    width:5.5em; 
+    object-fit: cover;
+    object-position: center; 
     
 }
 
-.bas{
+#activite{
     border: 1px solid black;
     width: 100%;
     margin-top: 3em;
@@ -311,7 +335,6 @@ aside figure img{
 }
 /*pied de page*/
 footer{
-    border: 1px solid black;
     background-color: #F2F2F2;
     width: 100%;
     margin-top: 3em;
@@ -323,14 +346,18 @@ footer{
 .credit{
    
     color: black;
-    border: 1px solid black;
-    margin-left: 5em;
+    margin-left: 6em;
+    margin-right: 5em;
 }
 
 
 .credit p{
-    font-size: 0.5em;
+    font-size: 0.6em;
     
+}
+
+.credit strong{
+    color: black;
 }
 
 
