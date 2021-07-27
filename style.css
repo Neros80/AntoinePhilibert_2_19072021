@@ -278,7 +278,7 @@ figcaption i{
     color: #0065FC;
 }
 
-#gris{
+.gris{
     color: #cecece;
 }
 
@@ -299,13 +299,13 @@ figcaption i{
 .populaires{
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 100%;
     color: black;
-    padding:1em;
 }
 
 .populaires h1{
     color: black;
+    margin:auto;
 
 }
 
@@ -332,7 +332,46 @@ figcaption i{
     margin-top: 3em;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding:1em;
 }
+#activite h1{
+    margin:auto;
+
+}
+.colone{
+    height: 19em;
+
+}
+.formatA{
+    height: 100%;
+    width: 15em;
+}
+
+.formatB{
+    height: 55%;
+    width: 15em;
+}
+.formatC{
+    height: 35%;
+    width: 15em;
+}
+.formatA img{
+    height: 90%;
+    width: 15em;
+    
+}
+.formatB img{
+    height: 84%;
+    width: 15em;
+    
+}
+.formatC img{
+    height: 75%;
+    width: 15em;
+    
+}
+
 /*pied de page*/
 footer{
     background-color: #F2F2F2;
