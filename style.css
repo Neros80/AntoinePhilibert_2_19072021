@@ -34,11 +34,22 @@ nav ul{
     padding-top: 0.2em;
 }
 nav li{
-    margin: 1em;   
+    margin: 1em;
+    padding-top: 2em;
+    margin-top: 0; 
+}
+
+#inscrire{
+    color:#0065FC;
+    font-weight: bolder;
+}
+
+nav li:hover{
+    color:#0065FC;
+    border-top:2px solid #0065FC;
 }
 
 #sousTitre {
-    
     color: black;
     font-size: 40%;
     padding-right: 55%;
@@ -209,6 +220,7 @@ section{
 section h1{
     font-size: 1em;
     width: 100%;
+    margin-left: 1em;
 }
 /*partie hébergement*/
 #hebergements{
@@ -220,14 +232,15 @@ section h1{
     border-radius: 20px;
 }
 
-figure{
+.standard .bloc figure{
     background-color: white;
     border-radius: 20px;
     border:3px solid rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    /*box-shadow: 5px 5px 5px rgb(184, 184, 184);*/
+    filter: drop-shadow(0 0 0.75rem rgb(184, 184, 184));
     margin: 0.5em;
     height: 10em;
-    width: 12em;
+    width: 13em;
  }
 
 
@@ -241,7 +254,7 @@ figure{
 figure img{
     border-radius: 20px 20px 0 0;
     height: 60%;
-    width: 12em;
+    width: 13em;
     object-fit: cover;
 
 }
@@ -305,21 +318,21 @@ figcaption i{
 
 .populaires h1{
     color: black;
-    margin:auto;
+    
 
 }
 
 #pop figure{
     display: flex;
     flex-direction: row;
-    height:6em;
+    height:7em;
     width: 16em; 
   
 }
 
 #pop figure img{
     border-radius: 20px 0 0 20px;
-    height: 6em;
+    height: 7em;
     width:5.5em; 
     object-fit: cover;
     object-position: center; 
@@ -327,50 +340,102 @@ figcaption i{
 }
 
 #activite{
-    border: 1px solid black;
     width: 100%;
-    margin-top: 3em;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding:1em;
+    justify-content: space-between;
+    padding:2em;
 }
 #activite h1{
-    margin:auto;
-
+    color: black;
+    margin-left: 1em;
 }
-.colone{
-    height: 19em;
 
+.colone{
+    width: 15em;
+    
+}
+.coloneB{
+    width: 15em;
+    display: flex;
+    flex-direction: column;    
 }
 .formatA{
-    height: 100%;
-    width: 15em;
+    height: 60%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    border-radius: 20px;
+    margin: auto;
 }
 
 .formatB{
-    height: 55%;
-    width: 15em;
+    height: 35%;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    border-radius: 20px;
+    margin-top: 0;
+    margin-left: 0;
 }
 .formatC{
-    height: 35%;
-    width: 15em;
+    height: 20%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 0%;
+    margin-left: 0;
+}
+.formatD{
+    height: 25%;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    border-radius: 20px;
+    margin-top: 0;
+    margin-left: 0;
+}
+.formatE{
+    height: 30%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 0%;
+    margin-left: 0;
 }
 .formatA img{
     height: 90%;
     width: 15em;
+    object-fit: cover;
+    object-position: center;
     
 }
 .formatB img{
     height: 84%;
     width: 15em;
+    object-fit: cover;
+    object-position: center;
     
 }
 .formatC img{
-    height: 75%;
+    height: 72%;
     width: 15em;
+    object-fit: cover;
+    object-position: center;
     
 }
+.formatD img{
+    height: 75%;
+    width: 15em;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.formatE img{
+    height: 79%;
+    width: 15em;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
 
 /*pied de page*/
 footer{
@@ -383,10 +448,10 @@ footer{
 }
 
 .credit{
-   
     color: black;
-    margin-left: 6em;
-    margin-right: 5em;
+    margin-left: 1em;
+    margin-right: 9em;
+    font-size: ;
 }
 
 
