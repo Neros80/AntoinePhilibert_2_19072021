@@ -1,10 +1,10 @@
 body{
     font-family: 'Raleway', sans-serif;
     color: grey;
-    /*width: 60%;*/
     margin: auto;
-    max-width: 1150px;
-    min-width: 1150px;
+    width: 66%;
+    max-width: 1200px;
+    justify-content: center;
    
 }
 
@@ -32,18 +32,18 @@ img {
 nav ul{
     display: flex;
     list-style-type: none;
-    padding-right: 16px;
-    padding-top: 0.2em;
 }
 nav li{
-    margin: 1em;
-    padding-top: 2em;
     margin-top: 0; 
+    padding-top: 1em;
+    padding-right: 20px;
 }
 
 #inscrire{
     color:#0065FC;
-    font-weight: bolder;
+    margin-top: 1em;
+    padding-top: 1em;
+
 }
 
 nav li:hover{
@@ -58,13 +58,15 @@ nav li:hover{
 }
 
 div p {
-    font-size: 150%;
+    font-size: 1.6em;
     color: grey;
 }
 
 nav {
     display: flex;
     flex-direction: row;
+    margin-right: 1em;
+   
    
 }
 
@@ -122,6 +124,7 @@ nav {
 .filter{
    width: 100%;
    display: flex;
+   min-width: 730px;
    
 }
 
@@ -139,8 +142,7 @@ nav {
 
     font-size: 1em;
     color: rgb(0, 0, 0);
-    padding-left: 1em;
-    margin-top: 1.5em;
+    padding: 1em;
     font-weight: bolder;
   
 }
@@ -151,17 +153,14 @@ nav {
     list-style-type: none;
     display: flex;
     margin-right: 1em;
+    padding: 0;
 
    
 }
 
 .filter li {
     
-    display: flex;
-    flex-direction: row;
-    
     margin: auto;
-    padding: auto;
     border-radius: 20px;
     border: 2px solid #F2F2F2;
     margin-right: 0.5em;
@@ -172,14 +171,12 @@ nav {
   
     color: #0065FC;
     background-color:#DEEBFF;
-    font-size: 1em;
-    padding: 0.5em;
-    border-radius: 20px;
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 18px;
     height: auto;
     width: 1em;
-    border: 3px solid #DEEBFF;
-    
-    
+    border: 3px solid #DEEBFF;    
 }
 
 #info{
@@ -201,16 +198,12 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-size: 1em;
+    margin-top: 1.5em;
+    color: black;
+    width: 100%;
+    
 }
-
-.bloc{
-        font-size: 1em;
-        margin-left: 2em;
-        margin-top: 1.5em;
-        color: black;
-        width: 100%;
-    }
-
 
 section{
     padding-top: 1em;
@@ -231,20 +224,21 @@ section h1{
     justify-content: space-around;
     flex-flow: wrap row;
     width: 65%;
-    min-width: 740px;
-    max-width: 750px;
+    min-width: 200px;
+    /*max-width: 750px;*/
     border-radius: 20px;
 }
 
-.standard .bloc figure{
+
+figure{
     background-color: white;
     border-radius: 20px;
     border:3px solid rgb(255, 255, 255);
     filter: drop-shadow(0 0 0.75rem rgb(184, 184, 184));
-    margin: 0.5em;
     height: 10em;
-    width: 13em;
- }
+    margin: 0.5em;
+
+}
 
 
 #afficher{
@@ -255,7 +249,7 @@ section h1{
     color: black;
 }
 figure img{
-    border-radius: 20px 20px 0 0;
+    border-radius: 18px 18px 0 0;
     height: 60%;
     width: 13em;
     object-fit: cover;
@@ -277,6 +271,7 @@ figure img{
     display: inline;
     justify-content: flex-start;
     flex-direction: column;
+    width: 140px;
 }
 .sousText p{
     margin: auto;
@@ -345,96 +340,105 @@ figcaption i{
 
 #activite{
     width: 100%;
-    height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:2em;
+    height: 350px;
 }
 #activite h1{
     color: black;
-    margin-left: 1em;
+    width: 100%;
 }
 
 .colone{
-    width: 15em;
-    
+    width: 16em;
+    height: 350px;  
 }
 .coloneB{
-    width: 15em;
+    width: 16em;
+    height: 350px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    justify-content: space-between;
 }
 .formatA{
-    height: 60%;
+
     box-shadow: 5px 5px 5px rgb(184, 184, 184);
     border-radius: 20px;
-    margin: auto;
+    background-color:white;
+    height: 100%;
+    margin:0;
+    border: none;
 }
 
 .formatB{
-    height: 35%;
+    height: 60%;
     width: 100%;
     box-shadow: 5px 5px 5px rgb(184, 184, 184);
     border-radius: 20px;
     margin-top: 0;
     margin-left: 0;
+    border: none;
 }
 .formatC{
-    height: 20%;
-    box-shadow: 5px 5px 5px rgb(184, 184, 184);
-    border-radius: 20px;
-    width: 100%;
-    margin-bottom: 0%;
-    margin-left: 0;
-}
-.formatD{
-    height: 25%;
-    width: 100%;
-    box-shadow: 5px 5px 5px rgb(184, 184, 184);
-    border-radius: 20px;
-    margin-top: 0;
-    margin-left: 0;
-}
-.formatE{
     height: 30%;
     box-shadow: 5px 5px 5px rgb(184, 184, 184);
     border-radius: 20px;
     width: 100%;
     margin-bottom: 0%;
     margin-left: 0;
+    border: none;
+}
+.formatD{
+    height: 45%;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    border-radius: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    border: none;
+}
+.formatE{
+    height: 50%;
+    box-shadow: 5px 5px 5px rgb(184, 184, 184);
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 0%;
+    margin-left: 0;
+    border: none;
+    margin:0;
 }
 .formatA img{
     height: 90%;
-    width: 15em;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     
 }
 .formatB img{
     height: 84%;
-    width: 15em;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     
 }
 .formatC img{
     height: 72%;
-    width: 15em;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     
 }
 .formatD img{
-    height: 75%;
-    width: 15em;
+    height: 80%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     
 }
 .formatE img{
-    height: 79%;
-    width: 15em;
+    height: 85%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     
@@ -467,6 +471,54 @@ footer{
     color: black;
 }
 
+@media screen and (max-width: 1024px){
+    
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+    }
 
+
+    /*nav mobile*/
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        padding-right: 16px;
+        padding-top: 0.2em;
+    }
+    nav li{
+        margin: 1em;
+        padding-top: 2em;
+        margin-top: 0; 
+    }
+    
+    #inscrire{
+        color:#0065FC;
+        font-weight: bolder;
+    }
+    
+    nav li:hover{
+        color:#0065FC;
+        border-top:2px solid #0065FC;
+    }
+    
+    #sousTitre {
+        color: black;
+        font-size: 40%;
+        padding-right: 55%;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    
+
+
+}
 
 
