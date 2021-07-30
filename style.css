@@ -9,66 +9,62 @@ body{
 }
 
 /*Entete*/
-.logo{
-    padding: auto;
-}
 
-header{    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  
-}
 
-img {
+.header{
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+    display: grid;
+    max-width: 1440px;
+    margin:auto;
+}
+.header img {
     width: 100px;
     height: 40px;
    
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.header nav{
+    grid-area: navbar;
+}
+.header nav a{
+    padding: 1rem 0;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 3px transparent solid;
+}
+.header ul{
+    margin: 1.2rem 0;
+    width: 100%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+.header li{
+    padding:0 1.2rem;
+}
+#inscription{
+    grid-area: button;
+}
+#inscription a{
+    color:#0065FC;
+    font-weight: 700;
+}
+
+
+
 /*Navigation*/
 
-nav ul{
-    display: flex;
-    list-style-type: none;
-}
-nav li{
-    margin-top: 0; 
-    padding-top: 1em;
-    padding-right: 20px;
-}
 
-#inscrire{
-    color:#0065FC;
-    margin-top: 1em;
-    padding-top: 1em;
 
-}
-
-nav li:hover{
-    color:#0065FC;
-    border-top:2px solid #0065FC;
-}
-
-#sousTitre {
-    color: black;
-    font-size: 40%;
-    padding-right: 55%;
-}
-
-div p {
-    font-size: 1.6em;
-    color: grey;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    margin-right: 1em;
-   
-   
-}
 
 
 /*Barre de Recherche*/
@@ -132,8 +128,6 @@ nav {
 
     font-size: 1em;
     color: rgb(0, 0, 0);
-    margin: auto;
-    padding-left: 0.5em;
     padding-right: 0.5em;
   
 }
@@ -171,12 +165,11 @@ nav {
   
     color: #0065FC;
     background-color:#DEEBFF;
-    font-size: 12px;
     padding: 7px;
     border-radius: 18px;
     height: auto;
     width: 1em;
-    border: 3px solid #DEEBFF;    
+    border: 3px solid #DEEBFF; 
 }
 
 #info{
@@ -471,54 +464,32 @@ footer{
     color: black;
 }
 
-@media screen and (max-width: 1024px){
-    
-    body{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: auto;
-    }
+
+
 
 
     /*nav mobile*/
-    nav ul{
-        display: flex;
-        list-style-type: none;
-        padding-right: 16px;
-        padding-top: 0.2em;
+@media screen and (max-width: 650px) {
+            
+        .header{
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+            "logo . button"
+            "navbar navbar navbar";
+        position: relative;
+        }
+        .header li{
+        width: 50%;
+        padding: 0;
+        }
+        #inscription{
+        position: absolute;
+        top:0;
+        right:0;
+        padding: 1rem;
+        width: auto;
+        }
+    .header img{
+        margin-left: 1rem;
     }
-    nav li{
-        margin: 1em;
-        padding-top: 2em;
-        margin-top: 0; 
-    }
-    
-    #inscrire{
-        color:#0065FC;
-        font-weight: bolder;
-    }
-    
-    nav li:hover{
-        color:#0065FC;
-        border-top:2px solid #0065FC;
-    }
-    
-    #sousTitre {
-        color: black;
-        font-size: 40%;
-        padding-right: 55%;
-    }
-    
-    nav {
-        display: flex;
-        flex-direction: row;
-       
-    }
-    
-
-
 }
-
-
