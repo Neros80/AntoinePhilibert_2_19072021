@@ -59,25 +59,28 @@ ul{
     font-weight: 700;
 }
 
+#sousTitre h1{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 6px;
+}
 
-
-/*Navigation*/
-
-
-
-
+#sousTitre p{
+    font-size: 13px;
+    margin-top:6px;
+    margin-bottom:10px;
+}
 
 /*Barre de Recherche*/
 
 
 #searchBar{
-    padding: auto;
     display: flex;
     justify-content: flex-start;
-    list-style: none;
     border: 1px solid #F2F2F2;
     border-radius: 10px;
     height: 2em;
+    width: 15em;
    
 }
 
@@ -96,7 +99,6 @@ ul{
 .search{
     width: 10em;
     height: auto;
-    padding-bottom: 4px;
     border:none;
     margin: 1px;
    
@@ -120,7 +122,8 @@ ul{
 .filter{
    width: 100%;
    display: flex;
-   min-width: 730px;
+   flex-wrap: wrap;
+   align-items: center;
    
 }
 
@@ -138,6 +141,7 @@ ul{
     color: rgb(0, 0, 0);
     padding: 1em;
     font-weight: bolder;
+    padding-left: 0;
   
 }
 
@@ -147,7 +151,9 @@ ul{
     list-style-type: none;
     display: flex;
     margin-right: 1em;
-    padding: 0;
+    padding: 0; 
+    flex-wrap: wrap;
+
 
    
 }
@@ -183,7 +189,8 @@ ul{
 }
 
 .infoText{
-    font-size: 0.5em;
+    font-size: 10px;
+    align-items: center;
 }
 
 /*page Principal*/
@@ -199,27 +206,30 @@ ul{
 }
 
 section{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding:1em;
+    min-width: 300px;
 }
 
 section h1{
     font-size: 1em;
-    width: 100%;
-    margin-left: 1em;
+}
+section p{
+    font-size: 12px;
+
 }
 /*partie hébergement*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap row;
+}
 #hebergements{
     background-color: #F2F2F2;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap row;
     width: 65%;
     min-width: 200px;
-    /*max-width: 750px;*/
     border-radius: 20px;
+    min-width: 700px;
+
 }
 
 
@@ -229,22 +239,17 @@ figure{
     border:3px solid rgb(255, 255, 255);
     filter: drop-shadow(0 0 0.75rem rgb(184, 184, 184));
     height: 10em;
-    margin: 0.5em;
+    width: 30%;
+    margin-right: 0;
+    margin-left: 0;
 
 }
 
 
-#afficher{
-    font-size: 1em;
-    width: 100%;
-    margin-left: 2em;
-    margin-top: 1.5em;
-    color: black;
-}
 figure img{
     border-radius: 18px 18px 0 0;
     height: 60%;
-    width: 13em;
+    width: 100%;
     object-fit: cover;
 
 }
@@ -259,12 +264,11 @@ figure img{
 
 
 .sousText{
-    margin-left:0.8em;
-    margin-top:0.5em;
+    margin-left:1em;
     display: inline;
     justify-content: flex-start;
     flex-direction: column;
-    width: 140px;
+    padding-top:5px;
 }
 .sousText p{
     margin: auto;
@@ -288,43 +292,31 @@ figcaption i{
 
 #pop{
     background-color: #F2F2F2;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap row;
-    width:25%;
-    min-width: 320px;
+    width:27%;
     border-radius: 20px;
-}
 
-#chart{
-    margin: auto;
-    font-size: 1em;
 }
 
 .populaires{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    color: black;
-}
-
-.populaires h1{
-    color: black;
-    
-
+    align-items: center;
 }
 
 #pop figure{
     display: flex;
     flex-direction: row;
     height:7em;
-    width: 16em; 
+    width: 90%;
+    margin: 1em; 
+    min-width: 250px;
   
 }
 
 #pop figure img{
-    border-radius: 20px 0 0 20px;
-    height: 7em;
+    border-radius: 15px 0 0 15px;
+    height: auto;
     width:5.5em; 
     object-fit: cover;
     object-position: center; 
@@ -336,19 +328,16 @@ figcaption i{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 350px;
+
 }
 #activite h1{
     color: black;
     width: 100%;
 }
 
+
 .colone{
-    width: 16em;
-    height: 350px;  
-}
-.coloneB{
-    width: 16em;
+    width: 22%;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -362,6 +351,7 @@ figcaption i{
     height: 100%;
     margin:0;
     border: none;
+    width: 100%;
 }
 
 .formatB{
@@ -409,7 +399,7 @@ figcaption i{
     
 }
 .formatB img{
-    height: 84%;
+    height: 85%;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -430,7 +420,7 @@ figcaption i{
     
 }
 .formatE img{
-    height: 85%;
+    height: 80%;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -450,8 +440,8 @@ footer{
 
 .credit{
     color: black;
-    margin-left: 1em;
-    margin-right: 9em;
+    width: 33%;
+    padding-left: 1em;
 }
 
 
@@ -469,20 +459,28 @@ footer{
 
 
     /*nav mobile*/
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px){
+    body{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 680px) {
+    body{
+        width: 100%;
+    }
             
-        .header{
+    .header{
         grid-template-columns: auto 1fr auto;
         grid-template-areas: 
             "logo . button"
             "navbar navbar navbar";
         position: relative;
         }
-        .header li{
+    .header li{
         width: 50%;
         padding: 0;
         }
-        #inscription{
+    #inscription{
         position: absolute;
         top:0;
         right:0;
