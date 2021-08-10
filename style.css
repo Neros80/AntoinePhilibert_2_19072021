@@ -9,9 +9,10 @@ body{
 
 /*Entete*/
 .header{
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar button";
+
     display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . nav inscription";
     max-width: 1440px;
     margin:auto;
 }
@@ -26,7 +27,7 @@ a{
 }
 
 .header nav{
-    grid-area: navbar;
+    grid-area: nav;
 }
 
 .header nav a{
@@ -56,7 +57,7 @@ nav li:hover{
 
 }
 #inscription{
-    grid-area: button;
+    grid-area: inscription;
 }
 #inscription a{
     color:#0065FC;
@@ -461,9 +462,8 @@ footer{
     .header{
         grid-template-columns: auto 1fr auto;
         grid-template-areas: 
-            "logo . button"
-            "navbar navbar navbar";
-        position: relative;
+            "logo . inscription"
+            "nav nav nav";
         }
     #inscription{
         position: absolute;
@@ -533,6 +533,11 @@ footer{
         width: 100%;
         padding-left: 1em;
         font-size: 20px;
+    }
+    #searchBar{
+        margin: auto;
+        height: 40px;
+        width: 70%;
     }
     .button{
         display: none;
