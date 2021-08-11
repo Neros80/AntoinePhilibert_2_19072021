@@ -4,12 +4,10 @@ body{
     margin: auto;
     width: 66%;
     max-width: 1200px;
-   
 }
 
 /*Entete*/
 .header{
-
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . nav inscription";
@@ -77,8 +75,6 @@ nav li:hover{
 }
 
 /*Barre de Recherche*/
-
-
 #searchBar{
     display: flex;
     justify-content: flex-start;
@@ -88,7 +84,6 @@ nav li:hover{
     width: 15em;
     align-items: center;
     margin-top: 1em;
-   
 }
 
 #marqueur{
@@ -246,7 +241,7 @@ figure img{
     object-position: center; 
 }
 
-.cote{
+figcaption{
     font-size: 0.5em;
     display: flex;
     flex-direction: column;
@@ -281,7 +276,7 @@ figcaption i{
 .gris{
     color: #cecece;
 }
-
+/*populaires*/
 #pop{
     background-color: #F2F2F2;
     width:27%;
@@ -314,7 +309,7 @@ figcaption i{
     object-position: center; 
     
 }
-
+/*activité*/
 #activite{
     width: 100%;
     display: flex;
@@ -326,8 +321,6 @@ figcaption i{
     color: black;
     width: 100%;
 }
-
-
 .colone{
     width: 22%;
     height: 350px;
@@ -465,6 +458,9 @@ footer{
             "logo . inscription"
             "nav nav nav";
         }
+    .header img{
+            margin-left: 1rem;
+        }
     #inscription{
         position: absolute;
         top:0;
@@ -473,12 +469,8 @@ footer{
         width: auto;
         border:none;
         }
-    .header img{
-        margin-left: 1rem;
-    }
     nav{
         width: 100%;
-    
     }
     nav li{
         border-bottom: 3px solid #cecece;
@@ -489,9 +481,27 @@ footer{
         color: #0065FC;
         border-bottom:3px solid #0065FC;
         border-top:none;
+        margin-top: 2px; 
+    }
+    #searchBar{
+        margin: auto;
+        height: 40px;
+        width: 70%;
     }
     #idsearchBar{
         margin: auto;
+    }
+    .button{
+        display: none;
+    } 
+    #loupe{
+        color: #ffffff;
+        background-color: #0065FC;
+        border-radius: 10px 10px 10px 10px;
+
+    }
+    #loupe, #marqueur{
+        padding:13px;
     }
     .container{
         flex-direction: column;
@@ -505,6 +515,7 @@ footer{
     }
     #pop{
         border-radius: 0;
+        order:-1;
     }
     #hebergements, #pop, #activite, .colone{
         width: 100%;
@@ -519,11 +530,7 @@ footer{
     #activite img{
         height: 70%;
     }
-    #searchBar{
-        margin: auto;
-        height: 40px;
-        width: 70%;
-    }
+
     footer{
         display: flex;
         flex-direction:column;
@@ -533,29 +540,5 @@ footer{
         width: 100%;
         padding-left: 1em;
         font-size: 20px;
-    }
-    #searchBar{
-        margin: auto;
-        height: 40px;
-        width: 70%;
-    }
-    .button{
-        display: none;
-    } 
-    #loupe{
-        color: #ffffff;
-        background-color: #0065FC;
-        border-radius: 10px 10px 10px 10px;
-
-    }
-    #loupe, #marqueur{
-        padding:13px;
-    }
-    #pop{
-        order:-1;
-    }
-    nav li:hover{
-        color: #0065FC;
-        margin-top: 2px; 
     }
 }
