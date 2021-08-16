@@ -1,6 +1,5 @@
 body{
     font-family: 'Raleway', sans-serif;
-    color: grey;
     margin: auto;
     width: 66%;
     max-width: 1200px;
@@ -15,7 +14,6 @@ body{
     margin:auto;
 }
 .header img {
-    width: 100px;
     height: 40px;
 }
 
@@ -45,7 +43,7 @@ ul{
     padding: 0;
 }
 .header li{
-    padding-right:1.2rem;    
+    padding:0 1.2rem;    
 }
 nav li:hover{
     color: #0065FC;
@@ -184,7 +182,7 @@ h2{
 }
 
 .infoText{
-    font-size: 13px;
+    font-size: 12px;
     align-items: center;
 }
 
@@ -201,6 +199,7 @@ h2{
 section{
     padding:1em;
     min-width: 300px;
+    margin: 1em 0;
 }
 
 section h1{
@@ -286,6 +285,7 @@ figcaption i{
     background-color: #F2F2F2;
     width:27%;
     border-radius: 20px;
+    
 
 }
 
@@ -333,6 +333,7 @@ figcaption i{
     flex-direction: column;
     justify-content: space-between;
     min-width: 190px;
+    margin: 1em 0.2em;
 }
 .formatA{
 
@@ -422,7 +423,6 @@ figcaption i{
 /*pied de page*/
 footer{
     background-color: #F2F2F2;
-    width: 100%;
     margin-top: 3em;
     display: flex;
     align-items: flex-start;
@@ -446,7 +446,7 @@ footer{
 }
 
     /*nav mobile*/
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1280px){
     body{
         width: 100%;
     }
@@ -502,7 +502,6 @@ footer{
         color: #0065FC;
         border-bottom:3px solid #0065FC;
         border-top:none;
-        margin-top: 0px; 
         padding-top: 16px;
     }
     #searchBar{
@@ -562,7 +561,7 @@ footer{
         align-items: center;
         }
     .credit{
-        width: 100%;
+        width: 80%;
         padding-left: 1em;
         font-size: 20px;
     }
